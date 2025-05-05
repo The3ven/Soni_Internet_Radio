@@ -1,0 +1,7 @@
+{
+  "name": "soni_internet_radio",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
