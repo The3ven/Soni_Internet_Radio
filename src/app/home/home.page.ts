@@ -229,7 +229,7 @@ export class HomePage implements OnInit, AfterViewInit {
         });
 
         setTimeout(() => {
-          console.log('Player initialized and ready after 1 second delay');
+          console.log('Player initialized and ready after 3 second delay');
         }, 3000);
 
         this.player.play().then(() => {
