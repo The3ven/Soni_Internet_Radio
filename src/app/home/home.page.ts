@@ -230,7 +230,7 @@ export class HomePage implements OnInit, AfterViewInit {
 
         setTimeout(() => {
           console.log('Player initialized and ready after 1 second delay');
-        }, 1000);
+        }, 3000);
 
         this.player.play().then(() => {
           console.log('Video playback started successfully');
@@ -266,7 +266,7 @@ export class HomePage implements OnInit, AfterViewInit {
       console.error('Maximum retry attempts reached');
       this.showToast('Unable to play this station. Trying the next one.');
       this.retryCount = 0; // Reset the retry count
-      this.goToNextStation(); // Automatically switch to the next station
+      // this.goToNextStation(); // Automatically switch to the next station
       return;
     }
 
@@ -278,7 +278,7 @@ export class HomePage implements OnInit, AfterViewInit {
       console.error('No resolved URL available for retry');
       this.showToast('Unable to play this station. Trying the next one.');
       this.retryCount = 0; // Reset the retry count
-      this.goToNextStation(); // Automatically switch to the next station
+      // this.goToNextStation(); // Automatically switch to the next station
     }
   }
 
